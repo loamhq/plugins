@@ -93,7 +93,7 @@ def keys(text):
 keys("")
 out = core.generate("a lighthouse")
 check("no key: refused, saying where a key goes",
-      not out["ok"] and out["error"] == "no_key" and "Accounts" in out["detail"], out)
+      not out["ok"] and out["error"] == "no_key" and "API keys" in out["detail"], out)
 
 keys("# openai: saved\nOPENAI_API_KEY=sk-test\nGEMINI_API_KEY=AIza-test\n")
 out = core.generate("A lighthouse at night!", quality="low")

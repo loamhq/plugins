@@ -1,7 +1,7 @@
 ---
 id: images
 name: Images
-version: 1.1.0
+version: 1.1.1
 author: Loam contributors
 api: 0
 kind: [extension]
@@ -39,7 +39,7 @@ contributes:
       label: Made with
       choices: [auto, openai, google]
       labels: {auto: "Whichever key you have", openai: OpenAI, google: Google Gemini}
-      note: With both keys in Accounts, OpenAI makes them unless you choose Google.
+      note: With both keys saved under API keys in Connections, OpenAI makes them unless you choose Google.
       default: auto
     - key: openai_model
       label: OpenAI model
@@ -61,7 +61,7 @@ ordinary PNG, JPEG or WebP file, in the **Images** folder unless the agent
 names another place, so it is yours like any other file.
 
 **It needs a key.** Add an OpenAI key or a Google (Gemini) key in
-Settings › Accounts. With both, OpenAI makes your images unless you choose
+Settings › Connections › API keys. With both, OpenAI makes your images unless you choose
 Google under **Made with** in this plugin's settings. The images are billed to you by the
 service that makes them; a high-quality OpenAI image costs roughly 35 times
 a low-quality one, and each call's cost is in the agent's answer.

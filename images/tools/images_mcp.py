@@ -17,7 +17,7 @@ PROTOCOL = "2025-06-18"
 DESCRIPTION = (
     "Make an image, or change one you have, and save it in the vault as an "
     "ordinary file (PNG, JPEG or WebP). OpenAI or Google makes it, whichever "
-    "key the owner has in Settings › Accounts.\n\n"
+    "key the owner has in Settings › Connections › API keys.\n\n"
     "  • From words alone: prompt='a cold blue dawn over flooded rice "
     "terraces, woodblock print'.\n"
     "  • Change a picture: source_images=['<path>'] and say what to change.\n"

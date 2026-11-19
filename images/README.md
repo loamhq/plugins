@@ -6,7 +6,7 @@ what it reaches and what it costs is in [PLUGIN.md](PLUGIN.md), which is
 also its manifest.
 
 - **Needs** an OpenAI or a Google (Gemini) key, entered once in Loam's
-  Settings › Accounts. It declares both (`keys:`), so Loam hands it those
+  Settings › Connections › API keys. It declares both (`keys:`), so Loam hands it those
   two keys and no other.
 - **No dependencies**: Python 3.11's standard library. `tools/images_mcp.py`
   is the agents' tool (MCP over stdio); `tools/images_core.py` does the work.
