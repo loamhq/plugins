@@ -13,7 +13,7 @@ and Images is built into [Loam](https://github.com/loamhq/loam) itself.
 | Mist Trail | [michaelhejazi/loam-mist-trail](https://github.com/michaelhejazi/loam-mist-trail) |
 | Yosemite | [michaelhejazi/loam-yosemite](https://github.com/michaelhejazi/loam-yosemite) |
 | Syncthing | [michaelhejazi/loam-syncthing](https://github.com/michaelhejazi/loam-syncthing) |
-| Images | built into Loam from 0.2.9 (`plugins/images/`): turn it on in Settings › Plugins |
+| Images | built into Loam from 0.2.10 (`plugins/images/`): turn it on in Settings › Plugins |
 
 **The tags stay** (`<id>-v<version>`, e.g. `autumn-v1.0.1`), so every link
 to this repository still installs what it did, and a copy installed from one
