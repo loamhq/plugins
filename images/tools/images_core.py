@@ -6,7 +6,7 @@ anywhere Loam does. Everything it needs from Loam comes in its environment:
 
 - ``LOAM_PLUGIN_KEYS``: a file of ``NAME=value`` lines Loam writes with the
   keys this plugin declared (``OPENAI_API_KEY``, ``GEMINI_API_KEY``), from
-  Settings › Accounts. ``$LOAM_PLUGIN_PRIVATE/keys.env`` when not given.
+  Settings › Connections › API keys. ``$LOAM_PLUGIN_PRIVATE/keys.env`` when not given.
 - ``LOAM_PLUGIN_SETTINGS_DIR``: its settings' ``values.json`` (folder,
   backend, models).
 - ``LOAM_VAULT``, ``LOAM_WORKSPACES``: where a relative path lands, and the
@@ -132,13 +132,13 @@ def choose_backend(have: dict[str, str], wanted: str = "auto") -> str:
     if wanted != "auto":
         if not have.get(need[wanted]):
             raise Refused("no_key", f"there is no {'OpenAI' if wanted == 'openai' else 'Google'} "
-                                    f"key in Settings › Accounts for Images")
+                                    f"key in Settings › Connections › API keys for Images")
         return wanted
     for b in ("openai", "google"):
         if have.get(need[b]):
             return b
     raise Refused("no_key", "Images has no key to use: add an OpenAI or a Google key in "
-                            "Settings › Accounts (the owner, or you with keys.set when "
+                            "Settings › Connections › API keys (the owner, or you with keys.set when "
                             "they give you one)")
 
 
